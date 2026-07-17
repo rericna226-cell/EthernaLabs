@@ -106,22 +106,6 @@ a {
   padding: 7rem 0 5rem;
   background: linear-gradient(135deg, #fff 55%, #f1f6ff);
 }
-.hero-layout {
-  display: grid;
-  grid-template-columns: minmax(120px, 16rem) minmax(0, 1fr);
-  align-items: center;
-  gap: 2.5rem;
-}
-.hero-copy {
-  min-width: 0;
-}
-.hero-logo {
-  width: min(100%, 220px);
-  height: auto;
-  display: block;
-  margin: 0;
-  object-fit: contain;
-}
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -351,10 +335,6 @@ textarea {
   .about-grid {
     grid-template-columns: 1fr;
   }
-  .hero-layout {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 }
 @media (max-width: 560px) {
   .hero {
@@ -366,9 +346,6 @@ textarea {
   .brand-logo {
     width: 1.7rem;
     height: 1.7rem;
-  }
-  .hero-logo {
-    width: min(42vw, 160px);
   }
   .cards,
   .flow,
