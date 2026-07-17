@@ -3,6 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="favicon (10)/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon (10)/favicon-96x96.png"
+    />
+    <link rel="shortcut icon" href="favicon (10)/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon (10)/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="favicon (10)/site.webmanifest" />
     <title>Etherna Labs | Portafolio de Tecnologías Independientes</title>
     <meta
       name="description"
@@ -30,7 +44,13 @@
     <a class="skip" href="#main">Saltar al contenido</a>
     <header class="site-header">
       <nav class="nav wrap" aria-label="Navegación principal">
-        <a class="brand" href="#inicio">Etherna<span> Labs</span></a
+        <a class="brand" href="#inicio"
+          ><img
+            class="brand-logo"
+            src="Etherna_PNG-Transparent-test.png"
+            alt="Logotipo de Etherna Labs"
+          />
+          <span class="brand-wordmark">Etherna<span> Labs</span></span></a
         ><button class="menu" aria-expanded="false" aria-controls="navlinks">
           Menú
         </button>
@@ -46,6 +66,11 @@
     <main id="main">
       <section class="hero" id="inicio">
         <div class="wrap">
+          <img
+            class="hero-logo"
+            src="Etherna_PNG-Transparent-test.png"
+            alt="Logotipo de Etherna Labs"
+          />
           <div class="eyebrow">
             Portal de descubrimiento y encuentro empresarial
           </div>
@@ -153,40 +178,48 @@
         [
           "GEENESSYS",
           "Iniciativa tecnológica independiente; consulte su sitio y documentación oficiales para conocer su alcance.",
+          "https://geenessys.com",
         ],
         [
           "PLATI STARS OS",
           "Proyecto independiente de tecnología; la información técnica vigente se encuentra en sus canales oficiales.",
+          "https://platistaros.com",
         ],
         [
           "OKOZAM",
           "Iniciativa independiente presentada para facilitar su descubrimiento y contacto directo.",
+          "https://okozam.com",
         ],
         [
           "TERACT Semiconductors",
           "Proyecto independiente relacionado con tecnología de semiconductores; consulte sus fuentes oficiales.",
+          "https://teractsemiconductors.com",
         ],
         [
           "ORBIT JK",
           "Iniciativa tecnológica independiente con identidad, documentación y comunicaciones propias.",
+          "https://orbitjk.com",
         ],
         [
           "ATOM-B",
           "Proyecto independiente accesible desde este portal para exploración inicial.",
+          "https://atom-b.com",
         ],
         [
           "CMU-Indust",
           "Iniciativa tecnológica independiente; valide capacidades y condiciones directamente con el proyecto.",
+          "https://cmu-indust.com",
         ],
         [
           "CMU-Think",
           "Proyecto independiente con canales propios para información técnica y conversaciones posteriores.",
+          "https://cmu-think.com",
         ],
       ];
       document.querySelector("#project-cards").innerHTML = projects
         .map(
-          ([n, d]) =>
-            `<article class="card"><h3>${n}</h3><p>${d}</p><div class="card-links"><a href="PROJECT_WEBSITE_PLACEHOLDER">Visitar sitio web</a><a href="WHITEPAPER_URL_PLACEHOLDER">Ver whitepaper</a><a href="PROJECT_CONTACT_PLACEHOLDER">Contactar proyecto</a></div></article>`,
+          ([n, d, url]) =>
+            `<article class="card"><h3>${n}</h3><p>${d}</p><div class="card-links"><a href="${url}" target="_blank" rel="noreferrer">Visitar sitio web</a><a href="${url}" target="_blank" rel="noreferrer">Contactar proyecto</a></div></article>`,
         )
         .join("");
     </script>
