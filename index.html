@@ -170,19 +170,44 @@
     </footer>
     <script>
       const projects = [
-        ["GEENESSYS", "https://geenessys.com"],
-        ["PLATI STARS OS", "https://platistaros.com"],
-        ["OKOZAM", "https://okozam.com"],
-        ["TERACT Semiconductors", "https://teractsemiconductors.com"],
-        ["ORBIT JK", "https://orbitjk.com"],
-        ["ATOM-B", "https://atom-b.com"],
-        ["CMU-Indust", "https://cmu-indust.com"],
-        ["CMU-Think", "https://cmu-think.com"],
+        [
+          "GEENESSYS",
+          "https://geenessys.com",
+          "Geenessys_Logotipo_NEgro copy.png",
+          "",
+        ],
+        [
+          "PLATI STARS OS",
+          "https://platistaros.com",
+          "PlatiStarsOSLOGO copy.png",
+          "",
+        ],
+        ["OKOZAM", "https://okozam.com", "OKOZAM logotipo copy.png", ""],
+        [
+          "TERACT Semiconductors",
+          "https://teractsemiconductors.com",
+          "TeractLogo (2) copy.png",
+          "",
+        ],
+        ["ORBIT JK", "https://orbitjk.com", "ORBITJKLOGO copy.png", ""],
+        ["ATOM-B", "https://atom-b.com", "ATOM-B_2 copy.png", "tall"],
+        [
+          "CMU-Indust",
+          "https://cmu-indust.com",
+          "cmu indust_2_07.26 copy.png",
+          "",
+        ],
+        [
+          "CMU-Think",
+          "https://cmu-think.com",
+          "cmu think_07.05.2026 copy.png",
+          "",
+        ],
       ];
       document.querySelector("#project-cards").innerHTML = projects
         .map(
-          ([n, url]) =>
-            `<article class="card"><h3>${n}</h3><p>An independent technology initiative with its own identity, documentation and communication channels. Consult its official sources for current scope.</p><div class="card-links"><a href="${url}" target="_blank" rel="noreferrer">Visit Website</a><a href="${url}" target="_blank" rel="noreferrer">Contact Project</a></div></article>`,
+          ([n, url, logo, logoClass]) =>
+            `<article class="card"><div class="card-media"><img class="project-logo ${logoClass}" src="${logo}" alt="${n} logo" loading="lazy" decoding="async"></div><h3>${n}</h3><p>An independent technology initiative with its own identity, documentation and communication channels. Consult its official sources for current scope.</p><div class="card-links"><a href="${url}" target="_blank" rel="noreferrer">Visit Website</a><a href="${url}" target="_blank" rel="noreferrer">Contact Project</a></div></article>`,
         )
         .join("");
     </script>

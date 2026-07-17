@@ -179,47 +179,63 @@
           "GEENESSYS",
           "Iniciativa tecnológica independiente; consulte su sitio y documentación oficiales para conocer su alcance.",
           "https://geenessys.com",
+          "Geenessys_Logotipo_NEgro copy.png",
+          "",
         ],
         [
           "PLATI STARS OS",
           "Proyecto independiente de tecnología; la información técnica vigente se encuentra en sus canales oficiales.",
           "https://platistaros.com",
+          "PlatiStarsOSLOGO copy.png",
+          "",
         ],
         [
           "OKOZAM",
           "Iniciativa independiente presentada para facilitar su descubrimiento y contacto directo.",
           "https://okozam.com",
+          "OKOZAM logotipo copy.png",
+          "",
         ],
         [
           "TERACT Semiconductors",
           "Proyecto independiente relacionado con tecnología de semiconductores; consulte sus fuentes oficiales.",
           "https://teractsemiconductors.com",
+          "TeractLogo (2) copy.png",
+          "",
         ],
         [
           "ORBIT JK",
           "Iniciativa tecnológica independiente con identidad, documentación y comunicaciones propias.",
           "https://orbitjk.com",
+          "ORBITJKLOGO copy.png",
+          "",
         ],
         [
           "ATOM-B",
           "Proyecto independiente accesible desde este portal para exploración inicial.",
           "https://atom-b.com",
+          "ATOM-B_2 copy.png",
+          "tall",
         ],
         [
           "CMU-Indust",
           "Iniciativa tecnológica independiente; valide capacidades y condiciones directamente con el proyecto.",
           "https://cmu-indust.com",
+          "cmu indust_2_07.26 copy.png",
+          "",
         ],
         [
           "CMU-Think",
           "Proyecto independiente con canales propios para información técnica y conversaciones posteriores.",
           "https://cmu-think.com",
+          "cmu think_07.05.2026 copy.png",
+          "",
         ],
       ];
       document.querySelector("#project-cards").innerHTML = projects
         .map(
-          ([n, d, url]) =>
-            `<article class="card"><h3>${n}</h3><p>${d}</p><div class="card-links"><a href="${url}" target="_blank" rel="noreferrer">Visitar sitio web</a><a href="${url}" target="_blank" rel="noreferrer">Contactar proyecto</a></div></article>`,
+          ([n, d, url, logo, logoClass]) =>
+            `<article class="card"><div class="card-media"><img class="project-logo ${logoClass}" src="${logo}" alt="Logotipo de ${n}" loading="lazy" decoding="async"></div><h3>${n}</h3><p>${d}</p><div class="card-links"><a href="${url}" target="_blank" rel="noreferrer">Visitar sitio web</a><a href="${url}" target="_blank" rel="noreferrer">Contactar proyecto</a></div></article>`,
         )
         .join("");
     </script>
