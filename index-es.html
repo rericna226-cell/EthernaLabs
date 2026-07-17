@@ -230,7 +230,7 @@
       document.querySelector("#project-cards").innerHTML = projects
         .map(
           ([n, d, url, logo, logoClass]) =>
-            `<article class="card"><div class="card-media"><img class="project-logo ${logoClass}" src="${logo}" alt="Logotipo de ${n}" loading="lazy" decoding="async"></div><h3>${n}</h3><p>${d}</p><div class="card-links"><a href="${url}" target="_blank" rel="noreferrer">Visitar sitio web</a><a href="${url}" target="_blank" rel="noreferrer">Contactar proyecto</a></div></article>`,
+            `<article class="card"><div class="card-media"><img class="project-logo ${logoClass}" src="${logo}" alt="Logotipo de ${n}" loading="lazy" decoding="async"></div><h3>${n}</h3><p>${d}</p><div class="card-links"><a href="${url}" target="_blank" rel="noreferrer">Visitar sitio web</a></div></article>`,
         )
         .join("");
     </script>
